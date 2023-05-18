@@ -14,7 +14,7 @@ from data_downloader import downloader
 
 
 netrc = downloader.Netrc()
-netrc.add('urs.earthdata.nasa.gov','debjyoti_earthdata99','Debjyoti@1999')
+netrc.add('urs.earthdata.nasa.gov','User ID','Password')
 print(netrc.hosts)
 
 
@@ -34,7 +34,7 @@ ds
 
 
 #single data downloaded at a time
-for i in range(19,len(ds)):
+for i in range(0,len(ds)):
     url=ds[i]
     downloader.download_data(url, folder=None, file_name=None,
                   client=None, engine='requests',
@@ -51,7 +51,7 @@ downloader.mp_download_datas(ds, folder=None,file_names=None, ncore=None, desc='
 
 
 # In[98]:
-
+#selecting the remaining links filed in multiprocessing method
 
 URLS=ds[40:50]
 URLS
