@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
+#author= @debroy99
 
 # In[3]:
 
@@ -51,7 +52,7 @@ downloader.mp_download_datas(ds, folder=None,file_names=None, ncore=None, desc='
 
 
 # In[98]:
-#selecting the remaining links filed in multiprocessing method
+#selecting the remaining links filed in multiprocessor method
 
 URLS=ds[40:50]
 URLS
